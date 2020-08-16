@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+  </head>
+  <body>
+    <table>
+      <label for="">Nombre completo</label>
+      <br />
+      <input type="text" id="nombreCompleto" />
+      <br />
+      <br />
+      <label for="">Cedula</label>
+      <br />
+      <input type="number" id="cedula" />
+      <br />
+      <br />
+      <label for="">Correo</label>
+      <br />
+      <input type="text" id="correo" />
+      <br />
+      <br />
+      <button onclick="GuardarUsuario()" type="button">Registrar</button>
+    </table>
+    <br />
+    <br />
+
+
+   
+    <table id="tabla_usuarios">
+      <input type="text" placeholder="buscar usuario" id="buscarUsuario" onkeyup="BuscarUsuario()">
+      <thead>
+        <tr>
+        <th>Nombre Completo</th>
+        <th>Cedula</th>
+        <th>Correo</th>
+      </tr>
+      </thead>
+      <tbody id="contenidoTablaUsuarios">
+      </tbody>
+    </table id="tabla_usuarios">
+
+    <script src="index.js"></script>
+  </body>
+</html>
